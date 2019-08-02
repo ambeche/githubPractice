@@ -1,0 +1,26 @@
+
+
+User->Browser: submit button clicked
+
+note over Browser 
+    Browser executes js codes,
+    invoking the form event handler.
+    Form data is collected, new note 
+    created and added to notes list
+    Browser rerenders the list on the page. 
+    Form data is sent to the Server
+end note
+
+
+
+
+
+Browser->Server: http Post : https://fullstack-exampleapp.herokuapp.com/new_note_spa :Jason data(string)
+
+Server-->Browser: Statuscode 201 : created
+
+note over Browser
+   Browse stays on the same page
+   No redirect
+   No further http requests
+end note
